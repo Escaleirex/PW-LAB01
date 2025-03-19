@@ -246,3 +246,67 @@ html, body {
         }
     }
 }
+
+.aboutUsSection {
+    height: 697px;
+    border: solid 2px rgba(38, 37, 34, 24%);
+    border-radius: 32px;
+    display: grid;
+    grid-template-columns: 66% 33%;
+    gap: 8px;
+    .bigGridPart {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        .topGridBigPart {
+            display: grid;
+            grid-template-columns: 66% 33%;
+            img {
+                width: 316px;
+                height: 326px;
+                border-radius: 24px;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+
+            }
+            .textGrid {
+                .tagUs {
+                    display: flex;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-family: "Roboto";
+                    background-color: #EE6352;
+                    padding-right: 12px;
+                    padding-left: 12px;
+                    height: 24px;
+                    width: 70px;
+                    align-items: center;
+                    justify-content: center;
+                    color: #F0EBE1;
+                    border-radius: 12px;
+                }
+            }            
+        }
+        .bottomGridBigPart {
+            img {
+                width: 861px;
+                height: 331px;
+                border-radius: 24px;
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+            }
+        }
+    }
+    .smallGridPart {
+        img {
+            width: 411px;
+            height: 665px;
+            border-radius: 24px;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+
+        }
+    }
+}
