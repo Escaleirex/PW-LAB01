@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cooks Delight</title>
+    <link rel="stylesheet" href="globalStyles.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <nav class="navBar">
@@ -14,10 +17,10 @@
                 <h1>Cooks<br>Delight</h1>
             </div>
             <ul class="linksList">
-                <li><a href="" id="activeNav">HOME</a></li>
-                <li><a href="">RECIPES</a></li>
-                <li><a href="">ABOUT US</a></li>
-              </ul> 
+                <li><a href="#" id="activeNav">HOME</a></li>
+                <li><a href="recipes">RECIPES</a></li>
+                <li><a href="aboutUs">ABOUT US</a></li>
+              </ul>
         </div>
     </nav>
     <div class="heroSection">
@@ -114,23 +117,37 @@
         </div>
     </div>
     <div class="aboutUsSection">
-        <div class="bigGridPart">
-            <div class="topGridBigPart">
-                <div class="textGrid">
-                    <p class="tagUs">About Us</p>
-                    <h1>Our Culinary Chronicle</h1>
-                    <p class="textAbout">Our journey is crafted with dedication, creativity, and an unrelenting commitment to delivering delightful culinary experiences. Join us in savoring the essence of every dish and the stories that unfold.</p>
-                    <button>Read More</button>
-                </div>
-                <img src="src/imgUpGrid1.png">
+        <div class="topGridBigPart">
+            <div class="textGrid">
+                <p class="tagUs">About Us</p>
+                <h1>Our Culinary Chronicle</h1>
+                <p class="textAbout">Our journey is crafted with dedication, creativity, and an unrelenting commitment to delivering delightful culinary experiences. Join us in savoring the essence of every dish and the stories that unfold.</p>
+                <button><a href="/aboutUs">Read More</a></button>
             </div>
-            <div class="bottomGridBigPart">
-                <img src="src/imgDownGrid1.png">
-            </div>
+            <img src="src/imgUpGrid1.png">
         </div>
-        <div class="smallGridPart">
-            <img src="src/imgGrid2.png">
+        <div class="bottomGridBigPart">
+            <img src="src/imgDownGrid1.png">
         </div>
     </div>
+    <footer class="footerBar">
+        <div class="footerContent">
+            <a href="./" class="">
+                <div class="logoDiv2">
+                    <img src="src/logo2.svg">
+                    <h1>Cooks<br>Delight</h1>
+                </div>
+            </a>
+            <ul class="linksList2">
+                <li><a href="../">HOME</a></li>
+                <li><a href="../recipes">RECIPES</a></li>
+                <li><a href="../aboutUs">ABOUT US</a></li>
+            </ul> 
+        </div>
+        <hr class="solid">
+        <div class="copyrightBottom">
+            <p>Copyright: © 2025 Daniel Escaleira & David Lopes</p>
+        </div>
+    </footer>
 </body>
 </html>

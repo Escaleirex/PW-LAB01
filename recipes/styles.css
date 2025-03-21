@@ -1,0 +1,133 @@
+.recipeSection {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .tagRecipe {
+        display: flex;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        font-family: "Roboto";
+        background-color: #EE6352;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+        height: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        color: #F0EBE1;
+        border-radius: 0.75rem;
+    }
+    h1 {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+    }
+    .subTitle {
+        font-family: "Roboto";
+        font-weight: 300;
+        text-align: center;
+    }
+    .recipeGridFeatured {
+        margin-top: 1.5rem;
+        width: 100%;
+        display: grid;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        justify-content: center;
+        justify-items: center;
+
+        @media (min-width: 1369px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media (max-width: 1369px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        @media (max-width: 904px) {
+            grid-template-columns: 1fr;
+        }
+        
+        .recipeGridItem {
+            display: flex;
+            flex-direction: column;
+            height: 28.188rem;
+            background: #FFFBF2;
+            border: 0.125rem rgba(38, 37, 34, 16%);
+            border-radius: 1.5rem;
+            img {
+                width: 100%;
+                height: 50%;
+                border-radius: 1.5rem 1.5rem 0px 0px;
+                object-fit: cover;
+            }
+            .detailsRecipeItem {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 50%;
+                padding: 1rem 1.5rem 1rem 1.5rem;
+                .textRecipeItem {
+                    h3{
+                        font-family: "Montserrat";
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                        text-transform: none;
+                    }
+                    p {
+                        font-family: "Roboto";
+                        font-weight: 300;
+                        font-size: 1rem;
+                    }
+                }
+                .bottomDetailsItem {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    p {
+                        font-size: 0.75rem;
+                        font-weight: 500;
+                        font-family: "Roboto";
+                        text-transform: uppercase;
+                    }
+                    button {
+                        background: none;
+                        border: 0.125rem solid #262522;
+                        border-radius: 1.5rem;
+                        padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+                        text-transform: uppercase;
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                        a {
+                            text-decoration: none;
+                            color: #262522;
+                        }
+                    }
+                    button:hover{
+                        background-color: #e7e4dc !important;
+                        transition: all ease-in-out 250ms;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 545px) {
+    .recipeGridItem {
+        width: 20.625rem !important;
+    }
+}
+@media (min-width: 546px) {
+    .recipeGridItem {
+        width: 26.625rem !important;
+    }
+}
